@@ -6,7 +6,8 @@ app = Flask(__name__)
 def hello():
     return "Hello World! 2"
 
-if __name__ == "__main__":
+if __name__ == "__main__":    
+    func = None
     try:
         func = request.environ.get('werkzeug.server.shutdown')
     except RuntimeError as re:
