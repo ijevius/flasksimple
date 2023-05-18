@@ -7,7 +7,10 @@ def hello():
     return "Hello World! 2"
 
 if __name__ == "__main__":
-    func = request.environ.get('werkzeug.server.shutdown')
+    try:
+        func = request.environ.get('werkzeug.server.shutdown')
+    except RuntimeError as re:
+        print("no running server")
     if not func is None:
         #raise RuntimeError('Not running with the Werkzeug Server')
         func()    
