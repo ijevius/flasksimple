@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World! 22 ok deploy"
+    return "Hello World! 23 ok deploy local?"
 
 if __name__ == "__main__":    
     func = None
