@@ -6,7 +6,7 @@ app = Flask(__name__)
 def hello():
     x = ""
     with open("html_body", "r") as f:
-        x = f.readlines()
+        x = f.read()
     return x
 
 if __name__ == "__main__":    
