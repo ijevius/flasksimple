@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World! 24 test"
+    x = "html_body"
+    with open() as f:
+        x = f.readlines()
+    return x
 
 if __name__ == "__main__":    
     func = None
