@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button after 5 seconds</title>
+    <script>
+      window.onload = function() {
+        setTimeout(function() {
+          document.getElementById("myButton").style.display = "block";
+        }, 2000);
+        
+        document.getElementById("myButton").addEventListener("click", function() {
+          var inputText = document.getElementById("myInput").value;
+          var outputElement = document.createElement("p");
+          outputElement.innerText = inputText;
+          document.body.appendChild(outputElement);
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <label for="myInput">Enter some text:</label>
+    <input type="text" id="myInput" name="myInput"><br><br>
+    <button id="myButton" style="display:none;">Submit</button>
+  </body>
+</html>
