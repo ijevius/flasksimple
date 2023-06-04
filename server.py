@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    x = "html_body"
-    with open() as f:
+    x = ""
+    with open("html_body", "r") as f:
         x = f.readlines()
     return x
 
