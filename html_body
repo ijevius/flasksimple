@@ -18,7 +18,7 @@
     </script>
   </head>
   <body>
-    <label for="myInput">Enter some text to me PLEASE:</label>
+    <label for="myInput">Enter some text to me PLEASE please please:</label>
     <input type="text" id="myInput" name="myInput"><br><br>
     <button id="myButton" style="display:none;">Submit</button>
   </body>
